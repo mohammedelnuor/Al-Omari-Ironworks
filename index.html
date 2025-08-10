@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أعمال مختار العمري</title>
+    <link rel="stylesheet" href="./css/master.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+ 
+<nav class="relative bg-violet-500 text-white" dir="rtl">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      
+      <!-- العنوان -->
+      <div class="flex-shrink-0">
+        <span class="text-lg font-bold">مختار العمري</span>
+      </div>
+
+      <!-- زر القائمة للموبايل -->
+      <div class="sm:hidden">
+        <button id="menuToggle" type="button" class="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white">
+          <span class="sr-only">فتح القائمة</span>
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- عناصر التنقل للشاشات الكبيرة -->
+      <div class="link  hidden sm:flex sm:items-center sm:space-x-reverse sm:space-x-4">
+        <a href="#" class="px-3 py-2 text-sm font-medium hover:border-b hover:border-white" data-section=".home">الرئيسية</a>
+        <a href="#" class="px-3 py-2 text-sm font-medium hover:border-b hover:border-white" data-section=".slite-2">من نحن</a>
+        <a href="#" class="px-3 py-2 text-sm font-medium hover:border-b hover:border-white " data-section=".slite-3">الخدمات</a>
+        <a href="#" class="px-3 py-2 text-sm font-medium hover:border-b hover:border-white" data-section=".slite-4">أعمالنا</a>
+        <a href="#" class="px-3 py-2 text-sm font-medium hover:border-b hover:border-white" data-section=".slite-5">تواصل معنا</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- قائمة الموبايل -->
+  <div id="mobileMenu" class="sm:hidden hidden px-4 pb-4">
+    <div class="space-y-1">
+      <a href="#" data-section=".slite-1" class="block rounded-md bg-violet-600 px-3 py-2 text-base font-medium">الرئيسية</a>
+      <a href="#" data-section=".slite-3" class="block rounded-md px-3 py-2 text-base font-medium hover:bg-white/10">من نحن</a>
+      <a href="#"data-section="..slite-2" class="block rounded-md px-3 py-2 text-base font-medium hover:bg-white/10">الخدمات</a>
+      <a href="#" data-section=".slite-4" class="block rounded-md px-3 py-2 text-base font-medium hover:bg-white/10">أعمالنا</a>
+      <a href="#" data-section=".slite-5" class="block rounded-md px-3 py-2 text-base font-medium hover:bg-white/10">تواصل معنا</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- srart slite-1 -->
+
+<section class="slite-1 mb-10 " dir="rtl">
+  <div class="container mx-auto">
+    <div class="flex flex-col-reverse gap-4 justify-center items-center md:flex-row mt-28 md:mt-32">
+
+      <div class="w-fit mt-28 md:mt-0 md:w-1/3">
+        <h1 class="text-4xl font-bold text-center md:text-right"> أعمال مختار العمري  </h1>
+        <p class="text-lg text-gray-700 mt-3 text-center md:text-right p-2 md:p-0 md:mb-5">
+         تجسّيد الحرفية في كل تفصيلة، وتقدّيم حلول حدادة متقنة تجمع بين القوة والجمال. تُصمّم الأعمال بعناية فائقة، وتُنفّذ بأسلوب يراعي احتياجات العميل ويعكس جودة التنفيذ
+        </p>
+
+        <div class="text-center md:text-right">
+        <a href="https://wa.me/966507023031" class="bg-violet-500 hover:bg-violet-600 h-10 w-40 rounded-md cursor-pointer text-white font-bold inline-flex items-center justify-center">تواصل معنا</a>
+        </div>
+
+      </div>
+
+      <div class="w-fit md:w-1/3">
+        <img src="./images/hedar2.png" alt="مختار العمري" class="w-full max" />
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="services" class="slite-2 bg-slate-200 rounded-sm py-16 px-4 sm:px-6 lg:px-8 mt-32">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-black mb-4">خدماتنا في الحدادة</h2>
+    <p class="text-gray-500 mb-10 max-w-2xl mx-auto">
+      نقدم مجموعة متنوعة من أعمال الحدادة التي تجمع بين القوة، الدقة، والجمال، لتناسب احتياجات البناء والتشطيب العصري.
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- أبواب -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">door_front</span>
+        <span>أبواب</span>
+      </div>
+
+      <!-- شبابيك -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">window</span>
+        <span>شبابيك</span>
+      </div>
+
+      <!-- دربزينات -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">stairs</span>
+        <span>دربزينات</span>
+      </div>
+
+      <!-- مظلات -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">umbrella</span>
+        <span>مظلات</span>
+      </div>
+
+      <!-- سواتر -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">fence</span>
+        <span>سواتر</span>
+      </div>
+
+      <!-- برجولات -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">roofing</span>
+        <span>برجولات</span>
+      </div>
+
+      <!-- هناجر -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">warehouse</span>
+        <span>هناجر</span>
+      </div>
+
+      <!-- أبواب سحاب -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">door_sliding</span>
+        <span>أبواب سحاب</span>
+      </div>
+
+      <!-- كلادنج -->
+      <div class="bg-gray-800 text-white rounded-lg p-4 shadow hover:bg-violet-700 transition flex flex-col items-center">
+        <span class="material-icons text-4xl mb-2">layers</span>
+        <span>كلادنج</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <div class="slite-3 " id="about">
+    <div class="container mx-auto">
+
+      <div class="flex flex-col-reverse gap-4 justify-center items-center md:flex-row mt-20 md:mt-32">
+
+        <div class="w-fit p-3 md:w-1/3">
+          <img src="./images/abuot.jpg" alt="" class="rounded-2xl p-2 ">
+
+        </div>
+
+        <div class="w-fit p-2 m-2 md:w-1/3 text-right">
+          <h2 class="text-3xl font-bold text-black mb-4">من نحن</h2>
+          <p> في أعمال مختار العمري نؤمن بأن الجودة تبدأ من أول لحظة. نعتني بأدق التفاصيل لنقدم أعمال حدادة تجمع بين القوة والجمال</p>
+
+          <p>بخبرة طويلة في تنفيذ الأبواب، الشبابيك، السواتر، والبرجولات، نضمن لك نتائج متينة ومصممة خصيصًا لتناسب احتياجاتك</p>
+          <p>نلتزم بالمواعيد، ونستخدم أفضل المواد، ونصمم حلولًا مبتكرة تواكب العصر وتلبي تطلعات عملائنا في البناء والتشطيب</p>
+
+      <div class="text-center md:text-right mt-4">
+          <a href="https://whatsapp.com/channel/0029VbBSc4pGJP89BGIYbW3f" class="bg-violet-500 hover:bg-violet-600 h-10 w-40 rounded-md cursor-pointer text-white font-bold inline-flex items-center justify-center">
+            إعرف أكثر
+          </a>
+      </div>
+        </div>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="slite-4 py-16 bg-slate-300 mt-32">
+  <div class="container mx-auto">
+
+
+    <div>
+
+      <h2 class="text-3xl font-bold text-black text-center mb-4">اعمالنا</h2>
+      <p class="text-gray-800 text-center max-w-2xl mx-auto mb-8 leading-relaxed p-3">
+  نقدم في أعمال مختار العمري مجموعة من الأعمال التي تجمع بين القوة، الدقة، والجمال. نعتني بأدق التفاصيل لنصمم
+   أبوابًا، شبابيك، مظلات، وسواتر تعكس الحرفية العالية وتلبي احتياجات البناء
+   العصري. كل مشروع يُنفّذ بعناية ليكون متينًا، أنيقًا، ومصممًا خصيصًا لك.
+</p>
+
+    </div  >
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0">
+
+      <div id="projects" class="flex justify-center">
+        <img src="./images/p1.jpg" alt="صورة عمل"
+             class="w-fit sm:w-4/5 p-5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./images/p2.jpg" alt="صورة عمل"
+             class="w-full  p-5 sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./images/p3.jpg" alt="صورة عمل"
+             class="w-full sm:w-4/5  p-5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+
+      <div class="flex justify-center">
+        <img src="./images/p4.jpg" alt="صورة عمل"
+             class="w-fit sm:w-4/5 p-5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./images/p5.jpg" alt="صورة عمل"
+             class="w-full  p-5 sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./images/p6.jpg" alt="صورة عمل"
+             class="w-full sm:w-4/5  p-5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+
+      <div class="flex justify-center">
+        <img src="./images/p7.jpg" alt="صورة عمل"
+             class="w-fit sm:w-4/5 p-5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./images/p8.jpg" alt="صورة عمل"
+             class="w-full  p-5 sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./images/p9.jpg" alt="صورة عمل"
+             class="w-full sm:w-4/5  p-5 md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300" />
+      </div>
+      <!-- كرر حسب الحاجة بنفس التنسيق -->
+
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="slite-5 bg-gray-900 text-gray-300 py-10 mt-16 text-right rounded-2xl" dir="rtl">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-right">
+    
+    <!-- معلومات مختصرة -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">أعمال مختار العمري</h3>
+      <p class="text-sm leading-relaxed">
+        خبرة طويلة في تنفيذ أعمال الحدادة بجودة عالية وتصاميم متقنة. نعتني بالتفاصيل لنقدم حلولًا تجمع بين القوة والجمال.
+      </p>
+    </div>
+
+    <!-- روابط سريعة -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">روابط سريعة</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#services" class="hover:text-white transition">خدماتنا</a></li>
+        <li><a href="#projects" class="hover:text-white transition">أعمالنا</a></li>
+        <li><a href="#about" class="hover:text-white transition">من نحن</a></li>
+        <li><a href="#contact" class="hover:text-white transition">تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <!-- معلومات التواصل -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">تواصل معنا</h3>
+      <p class="text-sm mb-2"> المملكه العربيه السعوديه  - الرياض  </p>
+<div class="flex flex-col gap-4">
+  <a href="https://wa.me/966533871592" target="_blank" rel="noopener" class="text-green-600 hover:underline">
+     0533871592 - تواصل عبر واتساب
+  </a>
+  <a href="https://wa.me/966507023031" target="_blank" rel="noopener" class="text-green-600 hover:underline">
+     0507023031 - تواصل عبر واتساب
+  </a>
+</div>
+
+
+    </div> 
+  </div>
+
+  <!-- حقوق النشر -->
+  <div class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4">
+    &copy; 2025 محمد النور. جميع الحقوق محفوظة.
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
